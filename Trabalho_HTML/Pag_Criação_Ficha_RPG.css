@@ -21,7 +21,7 @@ h1 {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
@@ -55,31 +55,37 @@ textarea {
     border-radius: 4px;
 }
 
-.atributos {
-    width: 65%;
+.conteudo-ficha {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.atributos h2 {
+.atributos {
+    flex: 2;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.equipamentos {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.atributos h2,
+.equipamentos h2 {
     margin-bottom: 20px;
     color: #555;
 }
 
 .grupo-atributos-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-}
-
-.grupo-atributos {
-    flex: 1; 
-    margin-bottom: 20px;
-}
-
-.grupo-atributos h3 {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #333;
 }
 
 .campo {
@@ -87,7 +93,6 @@ textarea {
 }
 
 .campo label {
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
@@ -97,6 +102,25 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+}
+
+.grupo-atributos {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.grupo-campos-linha {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.campo-classe {
+    flex: 2;
+}
+
+.campo-raca {
+    flex: 1;
 }
 
 button {
