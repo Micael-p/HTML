@@ -17,12 +17,11 @@
                 <img src="https://via.placeholder.com/200%20x%20300" alt="Ícone de perfil" class="icone-perfil">
                 <textarea id="descricao" name="descricao" placeholder="Escreva sobre seu personagem..." rows="5"></textarea>
             </div>
-
+        <div class="conteudo-ficha">
             <div class="atributos">
                 <h2>Atributos do Personagem</h2>
 
-                <div class="grupo-atributos-container">
-
+                <div class="grupo-atributos-iniciais">
                     <div class="grupo-atributos">
                         <h3>Informações Básicas</h3>
                         <div class="campo">
@@ -30,79 +29,164 @@
                             <input type="text" id="nome" name="nome" placeholder="Nome do personagem" required>
                         </div>
 
-                        <div class="campo">
-                            <label for="classe">Classe:</label>
-                            <input type="text" id="classe" name="classe" placeholder="Classe" required>
+                        <div class="grupo-campos-linha">
+                            <div class="campo campo-classe">
+                                <label for="classe">Classe:</label>
+                                <input type="text" id="classe" name="classe" placeholder="Classe" required>
+                            </div>
+                        
+                            <div class="campo campo-raca">
+                                <label for="raca">Raça:</label>
+                                <input type="text" id="raca" name="raca" placeholder="Raça" required>
+                            </div>
+                        
+                            <div class="campo campo-nivel">
+                                <label for="nivel">Nível:</label>
+                                <input type="number" id="nivel" name="nivel" min="1" max="20" value="1" required>
+                            </div>
                         </div>
 
-                        <div class="campo">
-                            <label for="raca">Raça:</label>
-                            <input type="text" id="raca" name="raca" placeholder="Raça" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="nivel">Nível:</label>
-                            <input type="number" id="nivel" name="nivel" min="1" max="20" value="1" required>
+                        <div class="equipamentos">
+                            <h2>Equipamentos</h2>
+                
+                            <div class="grupo-equipamentos">
+                                <h3>Armas</h3>
+                                <div class="campo">
+                                    <label for="arma1">Mão Direita:</label>
+                                    <input type="text" id="arma1" name="arma1">
+                                </div>
+                                <div class="campo">
+                                    <label for="arma2">Mão esquerda:</label>
+                                    <input type="text" id="arma2" name="arma2">
+                                </div>
+                            </div>
+                
+                            <div class="grupo-equipamentos">
+                                <h3>Armadura</h3>
+                                <div class="campo">
+                                    <label for="Capacete">Capacete:</label>
+                                    <input type="text" id="Capacete" name="Capacete">
+                                </div>
+                                <div class="campo">
+                                    <label for="Corporal">Corporal:</label>
+                                    <input type="text" id="Corporal" name="Corporal">
+                                </div>
+                                <div class="campo">
+                                    <label for="Luvas">Luvas:</label>
+                                    <input type="text" id="Luvas" name="Luvas">
+                                </div>
+                                <div class="campo">
+                                    <label for="Botas">Botas:</label>
+                                    <input type="text" id="Botas" name="Botas">
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                <div class="grupo-atributos-container">
 
                     <div class="grupo-atributos">
                         <h3>Atributos Físicos</h3>
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Uma-mão">Uma Mão:</label>
+                            <input type="number" id="Uma-mão" name="Uma-mão" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Duas-Mãos">Duas Mãos:</label>
+                            <input type="number" id="Duas-Mãos" name="Duas-Mãos" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Bloqueio">Bloqueio:</label>
+                            <input type="number" id="Bloqueio" name="Bloqueio" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="ferraria">ferraria:</label>
+                            <input type="number" id="ferraria" name="ferraria" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Armadura-Pesada">Armadura Pesada:</label>
+                            <input type="number" id="Armadura-Pesada" name="Armadura-Pesada" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Armadura-Leve">Armadura Leve:</label>
+                            <input type="number" id="Armadura Leve" name="Armadura Leve" min="0" max="100" value="0" required>
                         </div>
                     </div>
 
                     <div class="grupo-atributos">
                         <h3>Atributos Magicos</h3>
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Destruição">Destruição:</label>
+                            <input type="number" id="Destruição" name="Destruição" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Alteração">Alteração:</label>
+                            <input type="number" id="Alteração" name="Alteração" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Restauração">Restauração:</label>
+                            <input type="number" id="Restauração" name="Restauração" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Conjuração">Conjuração:</label>
+                            <input type="number" id="Conjuração" name="Conjuração" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Ilusão">Ilusão:</label>
+                            <input type="number" id="Ilusão" name="Ilusão" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Encantamento">Encantamento:</label>
+                            <input type="number" id="Encantamento" name="Encantamento" min="0" max="100" value="0" required>
                         </div>
                     </div>
 
                     <div class="grupo-atributos">
-                        <h3>Atributos Sociais</h3>
+                        <h3>Atributos Furtivos</h3>
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Arquiaria">Arquiaria:</label>
+                            <input type="number" id="Arquiaria" name="Arquiaria" min="0" max="100" value="0" required>
                         </div>
+
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Lábia">Lábia:</label>
+                            <input type="number" id="Lábia" name="Lábia" min="0" max="100" value="0" required>
                         </div>
+
                         <div class="campo">
-                            <label for="XX">XX:</label>
-                            <input type="number" id="XX" name="XX" min="1" max="20" value="10" required>
+                            <label for="Alquimia">Alquimia:</label>
+                            <input type="number" id="Alquimia" name="Alquimia" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="arrombamento">arrombamento:</label>
+                            <input type="number" id="arrombamento" name="arrombamento" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Alquimia">Alquimia:</label>
+                            <input type="number" id="Alquimia" name="Alquimia" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Mão Leve">Mão Leve:</label>
+                            <input type="number" id="Mão Leve" name="Mão Leve" min="0" max="100" value="0" required>
                         </div>
                     </div>
-
-                    
                 </div>
-
-                <button type="submit">Criar Ficha</button>
             </div>
+
+            <button type="submit">Criar Ficha</button>
         </section>
     </main>
 
