@@ -14,8 +14,10 @@
     <main>
         <section class="ficha">
             <div class="perfil">
-                <img src="https://via.placeholder.com/200%20x%20300" alt="Ícone de perfil" class="icone-perfil">
-                <textarea id="descricao" name="descricao" placeholder="Escreva sobre seu personagem..." rows="5"></textarea>
+                <img src="https://via.placeholder.com/250x300" alt="Ícone de perfil" class="icone-perfil" id="iconePerfil">
+                <input type="file" id="uploadFoto" accept="image/*" style="display:none;">
+                <label for="uploadFoto" class="botao-upload">Foto do personagem</label>
+                <textarea id="descricao" name="descricao" placeholder="Escreva sobre seu personagem..." rows="30"></textarea>
             </div>
         <div class="conteudo-ficha">
             <div class="atributos">
@@ -26,18 +28,18 @@
                         <h3>Informações Básicas</h3>
                         <div class="campo">
                             <label for="nome">Nome do Personagem:</label>
-                            <input type="text" id="nome" name="nome" placeholder="Nome do personagem" required>
+                            <input type="text" id="nome" name="nome">
                         </div>
 
                         <div class="grupo-campos-linha">
                             <div class="campo campo-classe">
                                 <label for="classe">Classe:</label>
-                                <input type="text" id="classe" name="classe" placeholder="Classe" required>
+                                <input type="text" id="classe" name="classe">
                             </div>
                         
                             <div class="campo campo-raca">
                                 <label for="raca">Raça:</label>
-                                <input type="text" id="raca" name="raca" placeholder="Raça" required>
+                                <input type="text" id="raca" name="raca">
                             </div>
                         
                             <div class="campo campo-nivel">
@@ -78,6 +80,25 @@
                                 <div class="campo">
                                     <label for="Botas">Botas:</label>
                                     <input type="text" id="Botas" name="Botas">
+                                </div>
+                            </div>
+
+                            <div class="grupo-equipamentos">
+                                <h3>Itens Especiais</h3>
+                                <div class="campo">
+                                    <label for="Amuleto">Amuleto</label>
+                                    <input type="text" id="Amuleto" name="Amuleto">
+                                </div>
+
+                            <div class="grupo-equipamentos">
+                                <h3>Aneis</h3>
+                                <div class="campo">
+                                    <label for="anel1">Mão Direita:</label>
+                                    <input type="text" id="anel1" name="anel1">
+                                </div>
+                                <div class="campo">
+                                    <label for="anel2">Mão esquerda:</label>
+                                    <input type="text" id="anel2" name="anel2">
                                 </div>
                             </div>
                         </div>
@@ -193,5 +214,6 @@
     <footer>
         <p>&copy; all rights reserved to Micael and Maria :D</p>
     </footer>
+    <script src="Cria_Ficha_RPG.js"></script>
 </body>
 </html>
