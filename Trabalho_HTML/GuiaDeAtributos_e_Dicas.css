@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #414141;
+}
+
+header {
+    width: 100%;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    background-color: #5e5e5e;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+    line-height: 1.6;
+}
