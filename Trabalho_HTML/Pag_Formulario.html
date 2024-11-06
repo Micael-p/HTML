@@ -8,8 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>CriaAd</h1> 
-        <form name="formulario" id="formulario" method="post" action="Cadastro.php" onsubmit="return validar()">
+        <header>
+            <h1>CriaAd</h1>    
+        </header> 
+        <form name="formulario" id="formulario" onsubmit="return validar();">
             <label for="nome">Nome: </label><br/>
             <input type="text" name="nome" placeholder="Digite seu nome" id="nome" value="" size="50"><br/>
             <span id="nomeErro" class="erro"></span><br/>
@@ -19,10 +21,10 @@
 
             <input type="submit" value="Cadastrar">
         </form>
+        <footer>
+            <p>&copy; all rights reserved to Micael:D</p>
+        </footer>
     </div>
-    <script src="a.js"></script>
-    <footer>
-        <p>&copy; all rights reserved to Micael :D</p>
-    </footer>
+    <script src="Cadastro.js"></script>
 </body>
 </html>
