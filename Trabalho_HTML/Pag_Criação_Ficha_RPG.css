@@ -161,7 +161,7 @@ textarea {
     flex: 1;
 }
 
-button {
+input[type="submit"] {
     padding: 10px 15px;
     background-color: #8b4caf;
     color: #efe0f8;
@@ -172,7 +172,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+input[type="submit"]:hover {
     background-color: #703d8d;
 }
 
