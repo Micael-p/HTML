@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criação de Fichas</title>
+    <title>Criação de Fichas de RPG</title>
     <link rel="stylesheet" href="Cria_Ficha_RPG.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
     </header>
 
     <main>
+        <form name="Criação de Fichas de RPG" id="Criação de Fichas de RPG" onsubmit="return validar();">
         <section class="ficha">
             <div class="perfil">
                 <img src="https://via.placeholder.com/250x300" alt="Ícone de perfil" class="icone-perfil" id="iconePerfil">
@@ -28,18 +29,18 @@
                         <h3>Informações Básicas</h3>
                         <div class="campo">
                             <label for="nome">Nome do Personagem:</label>
-                            <input type="text" id="nome" name="nome">
+                            <input type="text" id="nome" name="nome" required>
                         </div>
 
                         <div class="grupo-campos-linha">
                             <div class="campo campo-classe">
                                 <label for="classe">Classe:</label>
-                                <input type="text" id="classe" name="classe">
+                                <input type="text" id="classe" name="classe" required>
                             </div>
                         
                             <div class="campo campo-raca">
                                 <label for="raca">Raça:</label>
-                                <input type="text" id="raca" name="raca">
+                                <input type="text" id="raca" name="raca" required>
                             </div>
                         
                             <div class="campo campo-nivel">
@@ -110,6 +111,7 @@
                         <h3>Atributos Físicos</h3>
                         <div class="campo">
                             <label for="Uma-mão">Uma Mão:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html">p</a>
                             <input type="number" id="Uma-mão" name="Uma-mão" min="0" max="100" value="0" required>
                         </div>
 
@@ -185,8 +187,8 @@
                         </div>
 
                         <div class="campo">
-                            <label for="Alquimia">Furtividade:</label>
-                            <input type="number" id="Furtividade" name="Furtividade" min="0" max="100" value="0" required>
+                            <label for="Alquimia">Alquimia:</label>
+                            <input type="number" id="Alquimia" name="Alquimia" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
@@ -207,12 +209,12 @@
                 </div>
             </div>
 
-            <button type="submit">Criar Ficha</button>
+            <input type="submit" value="Criar ficha">
         </section>
+    </form>
     </main>
-
     <footer>
-        <p>&copy; all rights reserved to Micael :D</p>
+        <p>&copy; all rights reserved to Micael:D</p>
     </footer>
     <script src="Cria_Ficha_RPG.js"></script>
 </body>
