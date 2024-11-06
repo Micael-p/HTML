@@ -10,3 +10,8 @@ uploadFoto.addEventListener('change', function(event) {
         reader.readAsDataURL(uploadFoto.files[0]);
     }
 });
+
+function validar() {
+    window.location.href = 'Menu_Princ.html'; 
+    return false; 
+}
