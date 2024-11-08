@@ -15,6 +15,6 @@ function validar() {
         return false;
     }
 
-    window.location.href = 'Menu_Princ.html';
+    window.location.href = 'Pag_Menu_Princ.html';
     return false;
 }
