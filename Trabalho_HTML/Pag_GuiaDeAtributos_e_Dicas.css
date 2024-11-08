@@ -20,7 +20,7 @@ body {
     justify-content: center;
     background-color: #2e2e2e;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #00000033;
 }
 
 .navbar a {
