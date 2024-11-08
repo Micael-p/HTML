@@ -10,7 +10,6 @@
     <header>
         <h1>Criador de Personagem</h1>
     </header>
-
     <main>
         <form name="Criação de Fichas de RPG" id="Criação de Fichas de RPG" onsubmit="return validar();">
         <section class="ficha">
@@ -110,100 +109,117 @@
                     <div class="grupo-atributos">
                         <h3>Atributos Físicos</h3>
                         <div class="campo">
-                            <label for="Uma-mão">Uma Mão:</label>
-                            <a class="button" href="GuiaDeatributos_e_Dicas.html">p</a>
-                            <input type="number" id="Uma-mão" name="Uma-mão" min="0" max="100" value="0" required>
+                            <label for="Metalurgia">Metalurgia:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#F1">⚒️</a>
+                            <input type="number" id="Metalurgia" name="Metalurgia" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Duas-Mãos">Duas Mãos:</label>
-                            <input type="number" id="Duas-Mãos" name="Duas-Mãos" min="0" max="100" value="0" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="Bloqueio">Bloqueio:</label>
-                            <input type="number" id="Bloqueio" name="Bloqueio" min="0" max="100" value="0" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="ferraria">ferraria:</label>
-                            <input type="number" id="ferraria" name="ferraria" min="0" max="100" value="0" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="Armadura-Pesada">Armadura Pesada:</label>
+                            <label for="Armadura-Pesada">Armadura-Pesada:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#F2">🤖</a>
                             <input type="number" id="Armadura-Pesada" name="Armadura-Pesada" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Armadura-Leve">Armadura Leve:</label>
-                            <input type="number" id="Armadura Leve" name="Armadura Leve" min="0" max="100" value="0" required>
-                        </div>
-                    </div>
-
-                    <div class="grupo-atributos">
-                        <h3>Atributos Magicos</h3>
-                        <div class="campo">
-                            <label for="Destruição">Destruição:</label>
-                            <input type="number" id="Destruição" name="Destruição" min="0" max="100" value="0" required>
+                            <label for="Bloqueio">Bloqueio:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#F3">🛡️</a>
+                            <input type="number" id="Bloqueio" name="Bloqueio" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Alteração">Alteração:</label>
-                            <input type="number" id="Alteração" name="Alteração" min="0" max="100" value="0" required>
+                            <label for="Duas-Mãos">Duas-Mãos:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#F4">⚔️</a>
+                            <input type="number" id="Duas-Mãos" name="Duas-Mãos" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Restauração">Restauração:</label>
-                            <input type="number" id="Restauração" name="Restauração" min="0" max="100" value="0" required>
+                            <label for="Uma-Mão">Uma-Mão:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#F5">🗡️</a>
+                            <input type="number" id="Uma-Mão" name="Uma-Mão" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Conjuração">Conjuração:</label>
-                            <input type="number" id="Conjuração" name="Conjuração" min="0" max="100" value="0" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="Ilusão">Ilusão:</label>
-                            <input type="number" id="Ilusão" name="Ilusão" min="0" max="100" value="0" required>
-                        </div>
-
-                        <div class="campo">
-                            <label for="Encantamento">Encantamento:</label>
-                            <input type="number" id="Encantamento" name="Encantamento" min="0" max="100" value="0" required>
+                            <label for="Arqueiria">Arqueiria:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#F6">🏹</a>
+                            <input type="number" id="Arqueiria" name="Arqueiria" min="0" max="100" value="0" required>
                         </div>
                     </div>
 
                     <div class="grupo-atributos">
                         <h3>Atributos Furtivos</h3>
                         <div class="campo">
-                            <label for="Arquiaria">Arquiaria:</label>
-                            <input type="number" id="Arquiaria" name="Arquiaria" min="0" max="100" value="0" required>
+                            <label for="Armadura-Leve">Armadura-Leve:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#S1">🥋</a>
+                            <input type="number" id="Armadura-Leve" name="Armadura-Leve" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Lábia">Lábia:</label>
-                            <input type="number" id="Lábia" name="Lábia" min="0" max="100" value="0" required>
+                            <label for="Furtividade">Furtividade:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#S2">🐱‍👤</a>
+                            <input type="number" id="Furtividade" name="Furtividade" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Arrombamento">Arrombamento:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#S3">🗝️</a>
+                            <input type="number" id="Arrombamento" name="Arrombamento" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Mão-Leve">Mão-Leve:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#S4">💸</a>
+                            <input type="number" id="Mão-Leve" name="Mão-Leve" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Persuasão">Persuasão:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#S5">💬</a>
+                            <input type="number" id="Persuasão" name="Persuasão" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
                             <label for="Alquimia">Alquimia:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#S6">⚗️</a>
                             <input type="number" id="Alquimia" name="Alquimia" min="0" max="100" value="0" required>
                         </div>
+                    </div>
 
+                    <div class="grupo-atributos">
+                        <h3>Atributos Mágicos</h3>
                         <div class="campo">
-                            <label for="arrombamento">arrombamento:</label>
-                            <input type="number" id="arrombamento" name="arrombamento" min="0" max="100" value="0" required>
+                            <label for="Ilusão">Ilusão:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#M1">🌌</a>
+                            <input type="number" id="Ilusão" name="Ilusão" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Alquimia">Alquimia:</label>
-                            <input type="number" id="Alquimia" name="Alquimia" min="0" max="100" value="0" required>
+                            <label for="Conjuração">Conjuração:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#M2">🧙‍♂️</a>
+                            <input type="number" id="Conjuração" name="Conjuração" min="0" max="100" value="0" required>
                         </div>
 
                         <div class="campo">
-                            <label for="Mão Leve">Mão Leve:</label>
-                            <input type="number" id="Mão Leve" name="Mão Leve" min="0" max="100" value="0" required>
+                            <label for="Destruição">Destruição:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#M3">🔥</a>
+                            <input type="number" id="Destruição" name="Destruição" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Restauração">Restauração:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#M4">➕</a>
+                            <input type="number" id="Restauração" name="Restauração" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Alteração">Alteração:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#M5">🌟</a>
+                            <input type="number" id="Alteração" name="Alteração" min="0" max="100" value="0" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="Encantamento">Encantamento:</label>
+                            <a class="button" href="GuiaDeatributos_e_Dicas.html#M6">💫</a>
+                            <input type="number" id="Encantamento" name="Encantamento" min="0" max="100" value="0" required>
                         </div>
                     </div>
                 </div>
