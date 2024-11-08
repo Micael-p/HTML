@@ -11,7 +11,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: #414141;
-    color: white;
+    color: #efe0f8;
 }
 
 .container {
@@ -20,21 +20,28 @@ body {
     max-width: 500px;
 }
 
+.container:hover form {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
 h1 {
-    font-size: 50px;
-    color: white
+    font-size: 2.7em;
+    color: #8b4caf;
+    text-shadow: 2px 2px 8px #00000080;
+    margin-bottom: 20px;
 }
 
 form {
-    background-color: #2e2e2e;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #2e2e2e1a;
+    background-color: #333;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #0000004d;
 }
 
 label {
     font-weight: bold;
-    color: white;
+    color: #efe0f8;
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -42,37 +49,52 @@ label {
 
 input[type="text"],
 input[type="email"] {
+    background-color: #414141;
+    color: #ffffff;
+    border: 2px solid #444;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 1em;
     transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-    border-color: #007bff;
-    outline: none;
+    border-color: #8b4caf;
+    background-color: #2e2e2e;
 }
 
 .erro {
-    color: #ff3333;
+    color: #ff6b6b;
     font-size: 0.9em;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 input[type="submit"] {
     background-color: #8b4caf;
     color: #efe0f8;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 25px;
+    font-size: 1.1em;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 input[type="submit"]:hover {
-    background-color: #784297;
+    background-color: #703d8d;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #8b4caf;
+    text-align: center;
 }
